@@ -1,0 +1,66 @@
+
+.container-news{
+  background: url("/GDS/images/ProjetoGDS/t7.jpg") no-repeat center;
+  background-size: cover;
+  padding: 25px 40px;
+  text-align: center;
+  color:  white;
+
+}
+.toma {
+  max-width: 600px;
+  margin: 30px auto;
+  font-size: 17px;
+  font-weight: 300;
+  color: black;
+  -webkit-text-stroke: 0.020px grey;
+}
+.email-box{
+  height: 40px;
+  justify-content: center;
+  display:flex;
+}
+.email-box i{
+  background: #2f3542;
+  width: 40px;
+  line-height: 40px;
+}
+.tbox,.btn{
+  border: none;
+  outline: none;
+}
+.tbox{
+  width: 0px;
+  transition: 0.5s;
+}
+.email-box:hover > .tbox,.tbox:focus{
+  width: 260px;
+  padding: 0 10px;
+}
+.email-box > .btn:hover{
+ color: red;                 //fdfdsfsdiojfdsjiiiiiiiifffffffffffffffffffffffff
+}
+.btn{
+  background:#1b1b1b;
+  color: white;
+  padding: 0 10px;
+  
+  cursor: pointer;
+}
+
+@media (max-width: 880px) {
+  .email-box:hover > .tbox,.tbox:focus{
+  width: 180px;
+  padding: 0 10px;
+  }
+}
+@media (max-width: 450px) {
+  .email-box:hover > .tbox,.tbox:focus{
+  width: 200px;
+  
+  }
+  .container-news{
+    padding: 15px 5px;
+
+  }
+}

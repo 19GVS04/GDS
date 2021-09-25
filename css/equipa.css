@@ -1,0 +1,140 @@
+
+
+
+.team-section{
+	min-height: 20vh;
+	padding:20px 15px 30px;
+}
+
+.container-equipa{
+	max-width: 1170px;
+	margin:auto;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.team-section .section-title{
+	flex-basis: 100%;
+	max-width: 100%;
+	margin-bottom: 70px;
+}
+
+
+
+.team-section .section-title p{
+	font-size:16px;
+	text-align: center;
+	margin:15px 0 0;
+	color:#ffffff;
+}
+.team-section .team-items{
+	
+	flex-basis: 100%;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.team-section .team-items .item{
+ flex-basis: calc(25% - 30px);
+ max-width: calc(25% - 30px);
+ transition: all .2s ease;
+ margin-bottom: 40px;
+}
+.team-section .team-items .item img:hover{
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.39);
+	border-radius: 8px;
+	
+
+}
+.team-section .team-items .item img{
+	display: block;
+	width: 100%;
+	height: 85%;
+	border-radius: 8px;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.1);
+}
+
+.team-section .team-items .item .inner{
+	position: relative;
+	z-index: 11;
+	padding:0 15px;
+}
+.team-section .team-items .item .inner .info{
+	background-color:#1b1b1b;
+	text-align: center;
+	padding: 10px 7.5px;
+	border-radius:8px;
+	transition: all .5s ease;
+	margin-top: -40px;
+}
+.team-section .team-items .item:hover  .info{
+    transform: translateY(-10px);
+}
+.team-section .team-items .item:hover{
+ transform: translateY(-10px);	
+}
+.team-section .team-items .item .inner .info h5{
+	margin:0;
+	font-size: 18px;
+	font-weight: 600;
+	color:#ffffff;
+}
+.team-section .team-items .item .inner .info p{
+	font-size: 16px;
+	font-weight: 400;
+	color:#c5c5c5;
+	
+}
+.team-section .team-items .item:hover {
+	
+	
+	
+}
+
+
+
+
+
+/*responsive*/
+@media(max-width: 991px){
+	.team-section .team-items .item{
+      flex-basis: calc(50% - 30px);
+       max-width: calc(30% - 30px);
+
+   }
+}
+
+@media(max-width: 767px){
+	.team-section .team-items .item{
+      flex-basis: calc(60%);
+       max-width: calc(80%);
+
+   }
+   .team-section .team-items .item .inner .info h5{
+
+	font-size: 16px;
+	
+}
+.team-section .team-items .item .inner .info p{
+	font-size: 14px;
+	
+	
+}
+}
+@media(max-width: 360px){
+	
+   .team-section .team-items .item .inner .info h5{
+
+	font-size: 14px;
+	
+}
+.team-section .team-items .item .inner .info p{
+	font-size: 12px;
+	
+	
+}
+}
